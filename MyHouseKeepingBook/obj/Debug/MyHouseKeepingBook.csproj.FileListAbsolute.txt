@@ -1,0 +1,11 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\bin\Debug\MyHouseKeepingBook.exe.config
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\bin\Debug\MyHouseKeepingBook.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\bin\Debug\MyHouseKeepingBook.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\obj\Debug\MyHouseKeepingBook.csprojAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\obj\Debug\MyHouseKeepingBook.Form1.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\obj\Debug\MyHouseKeepingBook.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\obj\Debug\MyHouseKeepingBook.csproj.GenerateResource.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\obj\Debug\MyHouseKeepingBook.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\obj\Debug\MyHouseKeepingBook.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\obj\Debug\MyHouseKeepingBook.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\MyHouseKeepingBook\obj\Debug\MyHouseKeepingBook.ItemForm.resources
