@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyHouseKeepingBook
+namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class ItemForm : Form
     {
-        public Form1()
+        public ItemForm()
         {
             InitializeComponent();
+        }
+
+        private void ItemForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

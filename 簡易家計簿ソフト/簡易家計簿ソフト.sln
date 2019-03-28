@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "簡易家計簿ソフト", "簡易家計簿ソフト\簡易家計簿ソフト.csproj", "{0C08F4FB-99B8-499A-9D8C-9BA10F2D9103}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C08F4FB-99B8-499A-9D8C-9BA10F2D9103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C08F4FB-99B8-499A-9D8C-9BA10F2D9103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C08F4FB-99B8-499A-9D8C-9BA10F2D9103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C08F4FB-99B8-499A-9D8C-9BA10F2D9103}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B18B3D7A-3B9C-4B22-94BB-4DA138F75230}
+	EndGlobalSection
+EndGlobal

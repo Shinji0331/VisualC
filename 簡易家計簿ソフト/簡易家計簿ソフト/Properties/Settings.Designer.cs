@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyHouseKeepingBook.Properties
+namespace WindowsFormsApp1.Properties
 {
 
 
