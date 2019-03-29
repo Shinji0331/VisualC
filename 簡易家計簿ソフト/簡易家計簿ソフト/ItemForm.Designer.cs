@@ -28,17 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.categoryDataTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categoryDataSet1 = new WindowsFormsApp1.CategoryDataSet();
             this.txtItem = new System.Windows.Forms.TextBox();
             this.txtRemarks = new System.Windows.Forms.TextBox();
             this.mtxtMoney = new System.Windows.Forms.MaskedTextBox();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.categoryDataSet = new WindowsFormsApp1.CategoryDataSet();
+            this.categoryDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.categoryDataTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -50,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(447, 49);
+            this.label1.Location = new System.Drawing.Point(496, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 24);
             this.label1.TabIndex = 1;
@@ -59,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(447, 142);
+            this.label2.Location = new System.Drawing.Point(496, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 24);
             this.label2.TabIndex = 2;
@@ -68,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(447, 237);
+            this.label3.Location = new System.Drawing.Point(496, 232);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 3;
@@ -77,7 +86,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(447, 331);
+            this.label4.Location = new System.Drawing.Point(496, 326);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 24);
             this.label4.TabIndex = 4;
@@ -85,30 +94,42 @@
             // 
             // cmbCategory
             // 
+            this.cmbCategory.DataSource = this.categoryDataTableBindingSource;
+            this.cmbCategory.DisplayMember = "分類";
             this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(523, 49);
+            this.cmbCategory.Location = new System.Drawing.Point(572, 44);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(229, 32);
             this.cmbCategory.TabIndex = 5;
             // 
+            // categoryDataTableBindingSource
+            // 
+            this.categoryDataTableBindingSource.DataMember = "CategoryDataTable";
+            this.categoryDataTableBindingSource.DataSource = this.categoryDataSet1;
+            // 
+            // categoryDataSet1
+            // 
+            this.categoryDataSet1.DataSetName = "CategoryDataSet";
+            this.categoryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtItem
             // 
-            this.txtItem.Location = new System.Drawing.Point(523, 142);
+            this.txtItem.Location = new System.Drawing.Point(572, 137);
             this.txtItem.Name = "txtItem";
             this.txtItem.Size = new System.Drawing.Size(229, 31);
             this.txtItem.TabIndex = 6;
             // 
             // txtRemarks
             // 
-            this.txtRemarks.Location = new System.Drawing.Point(523, 331);
+            this.txtRemarks.Location = new System.Drawing.Point(572, 326);
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(229, 31);
             this.txtRemarks.TabIndex = 7;
             // 
             // mtxtMoney
             // 
-            this.mtxtMoney.Location = new System.Drawing.Point(523, 237);
+            this.mtxtMoney.Location = new System.Drawing.Point(572, 232);
             this.mtxtMoney.Name = "mtxtMoney";
             this.mtxtMoney.Size = new System.Drawing.Size(229, 31);
             this.mtxtMoney.TabIndex = 8;
@@ -126,18 +147,28 @@
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(561, 398);
+            this.buttonCancel.Location = new System.Drawing.Point(608, 398);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(158, 52);
             this.buttonCancel.TabIndex = 10;
             this.buttonCancel.Text = "キャンセル";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
+            // categoryDataSet
+            // 
+            this.categoryDataSet.DataSetName = "CategoryDataSet";
+            this.categoryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoryDataSetBindingSource
+            // 
+            this.categoryDataSetBindingSource.DataSource = this.categoryDataSet;
+            this.categoryDataSetBindingSource.Position = 0;
+            // 
             // ItemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 492);
+            this.ClientSize = new System.Drawing.Size(866, 492);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.mtxtMoney);
@@ -152,6 +183,10 @@
             this.Name = "ItemForm";
             this.Text = "登録";
             this.Load += new System.EventHandler(this.ItemForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.categoryDataTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +205,9 @@
         private System.Windows.Forms.MaskedTextBox mtxtMoney;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.BindingSource categoryDataSetBindingSource;
+        private CategoryDataSet categoryDataSet;
+        private System.Windows.Forms.BindingSource categoryDataTableBindingSource;
+        private CategoryDataSet categoryDataSet1;
     }
 }

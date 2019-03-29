@@ -20,17 +20,17 @@ namespace WindowsFormsApp1 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("MoneyDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("CategoryDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class MoneyDataSet : global::System.Data.DataSet {
+    public partial class CategoryDataSet : global::System.Data.DataSet {
         
-        private moneyDataTableDataTable tablemoneyDataTable;
+        private CategoryDataTableDataTable tableCategoryDataTable;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public MoneyDataSet() {
+        public CategoryDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace WindowsFormsApp1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected MoneyDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected CategoryDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace WindowsFormsApp1 {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["moneyDataTable"] != null)) {
-                    base.Tables.Add(new moneyDataTableDataTable(ds.Tables["moneyDataTable"]));
+                if ((ds.Tables["CategoryDataTable"] != null)) {
+                    base.Tables.Add(new CategoryDataTableDataTable(ds.Tables["CategoryDataTable"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace WindowsFormsApp1 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public moneyDataTableDataTable moneyDataTable {
+        public CategoryDataTableDataTable CategoryDataTable {
             get {
-                return this.tablemoneyDataTable;
+                return this.tableCategoryDataTable;
             }
         }
         
@@ -127,7 +127,7 @@ namespace WindowsFormsApp1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            MoneyDataSet cln = ((MoneyDataSet)(base.Clone()));
+            CategoryDataSet cln = ((CategoryDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace WindowsFormsApp1 {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["moneyDataTable"] != null)) {
-                    base.Tables.Add(new moneyDataTableDataTable(ds.Tables["moneyDataTable"]));
+                if ((ds.Tables["CategoryDataTable"] != null)) {
+                    base.Tables.Add(new CategoryDataTableDataTable(ds.Tables["CategoryDataTable"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace WindowsFormsApp1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablemoneyDataTable = ((moneyDataTableDataTable)(base.Tables["moneyDataTable"]));
+            this.tableCategoryDataTable = ((CategoryDataTableDataTable)(base.Tables["CategoryDataTable"]));
             if ((initTable == true)) {
-                if ((this.tablemoneyDataTable != null)) {
-                    this.tablemoneyDataTable.InitVars();
+                if ((this.tableCategoryDataTable != null)) {
+                    this.tableCategoryDataTable.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace WindowsFormsApp1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "MoneyDataSet";
+            this.DataSetName = "CategoryDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/CategoryDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablemoneyDataTable = new moneyDataTableDataTable();
-            base.Tables.Add(this.tablemoneyDataTable);
+            this.tableCategoryDataTable = new CategoryDataTableDataTable();
+            base.Tables.Add(this.tableCategoryDataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializemoneyDataTable() {
+        private bool ShouldSerializeCategoryDataTable() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace WindowsFormsApp1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            MoneyDataSet ds = new MoneyDataSet();
+            CategoryDataSet ds = new CategoryDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,29 +270,23 @@ namespace WindowsFormsApp1 {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void moneyDataTableRowChangeEventHandler(object sender, moneyDataTableRowChangeEvent e);
+        public delegate void CategoryDataTableRowChangeEventHandler(object sender, CategoryDataTableRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class moneyDataTableDataTable : global::System.Data.TypedTableBase<moneyDataTableRow> {
-            
-            private global::System.Data.DataColumn column日付;
+        public partial class CategoryDataTableDataTable : global::System.Data.TypedTableBase<CategoryDataTableRow> {
             
             private global::System.Data.DataColumn column分類;
             
-            private global::System.Data.DataColumn column品名;
-            
-            private global::System.Data.DataColumn column金額;
-            
-            private global::System.Data.DataColumn column備考;
+            private global::System.Data.DataColumn column入出金分類;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public moneyDataTableDataTable() {
-                this.TableName = "moneyDataTable";
+            public CategoryDataTableDataTable() {
+                this.TableName = "CategoryDataTable";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +294,7 @@ namespace WindowsFormsApp1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal moneyDataTableDataTable(global::System.Data.DataTable table) {
+            internal CategoryDataTableDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,17 +311,9 @@ namespace WindowsFormsApp1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected moneyDataTableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected CategoryDataTableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn 日付Column {
-                get {
-                    return this.column日付;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -340,25 +326,9 @@ namespace WindowsFormsApp1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn 品名Column {
+            public global::System.Data.DataColumn 入出金分類Column {
                 get {
-                    return this.column品名;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn 金額Column {
-                get {
-                    return this.column金額;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn 備考Column {
-                get {
-                    return this.column備考;
+                    return this.column入出金分類;
                 }
             }
             
@@ -373,49 +343,46 @@ namespace WindowsFormsApp1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public moneyDataTableRow this[int index] {
+            public CategoryDataTableRow this[int index] {
                 get {
-                    return ((moneyDataTableRow)(this.Rows[index]));
+                    return ((CategoryDataTableRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event moneyDataTableRowChangeEventHandler moneyDataTableRowChanging;
+            public event CategoryDataTableRowChangeEventHandler CategoryDataTableRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event moneyDataTableRowChangeEventHandler moneyDataTableRowChanged;
+            public event CategoryDataTableRowChangeEventHandler CategoryDataTableRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event moneyDataTableRowChangeEventHandler moneyDataTableRowDeleting;
+            public event CategoryDataTableRowChangeEventHandler CategoryDataTableRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event moneyDataTableRowChangeEventHandler moneyDataTableRowDeleted;
+            public event CategoryDataTableRowChangeEventHandler CategoryDataTableRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddmoneyDataTableRow(moneyDataTableRow row) {
+            public void AddCategoryDataTableRow(CategoryDataTableRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public moneyDataTableRow AddmoneyDataTableRow(System.DateTime 日付, string 分類, string 品名, int 金額, string 備考) {
-                moneyDataTableRow rowmoneyDataTableRow = ((moneyDataTableRow)(this.NewRow()));
+            public CategoryDataTableRow AddCategoryDataTableRow(string 分類, string 入出金分類) {
+                CategoryDataTableRow rowCategoryDataTableRow = ((CategoryDataTableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        日付,
                         分類,
-                        品名,
-                        金額,
-                        備考};
-                rowmoneyDataTableRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowmoneyDataTableRow);
-                return rowmoneyDataTableRow;
+                        入出金分類};
+                rowCategoryDataTableRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowCategoryDataTableRow);
+                return rowCategoryDataTableRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                moneyDataTableDataTable cln = ((moneyDataTableDataTable)(base.Clone()));
+                CategoryDataTableDataTable cln = ((CategoryDataTableDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -423,58 +390,49 @@ namespace WindowsFormsApp1 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new moneyDataTableDataTable();
+                return new CategoryDataTableDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
-                this.column日付 = base.Columns["日付"];
                 this.column分類 = base.Columns["分類"];
-                this.column品名 = base.Columns["品名"];
-                this.column金額 = base.Columns["金額"];
-                this.column備考 = base.Columns["備考"];
+                this.column入出金分類 = base.Columns["入出金分類"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.column日付 = new global::System.Data.DataColumn("日付", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.column日付);
                 this.column分類 = new global::System.Data.DataColumn("分類", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.column分類);
-                this.column品名 = new global::System.Data.DataColumn("品名", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.column品名);
-                this.column金額 = new global::System.Data.DataColumn("金額", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.column金額);
-                this.column備考 = new global::System.Data.DataColumn("備考", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.column備考);
+                this.column入出金分類 = new global::System.Data.DataColumn("入出金分類", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.column入出金分類);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public moneyDataTableRow NewmoneyDataTableRow() {
-                return ((moneyDataTableRow)(this.NewRow()));
+            public CategoryDataTableRow NewCategoryDataTableRow() {
+                return ((CategoryDataTableRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new moneyDataTableRow(builder);
+                return new CategoryDataTableRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(moneyDataTableRow);
+                return typeof(CategoryDataTableRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.moneyDataTableRowChanged != null)) {
-                    this.moneyDataTableRowChanged(this, new moneyDataTableRowChangeEvent(((moneyDataTableRow)(e.Row)), e.Action));
+                if ((this.CategoryDataTableRowChanged != null)) {
+                    this.CategoryDataTableRowChanged(this, new CategoryDataTableRowChangeEvent(((CategoryDataTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -482,8 +440,8 @@ namespace WindowsFormsApp1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.moneyDataTableRowChanging != null)) {
-                    this.moneyDataTableRowChanging(this, new moneyDataTableRowChangeEvent(((moneyDataTableRow)(e.Row)), e.Action));
+                if ((this.CategoryDataTableRowChanging != null)) {
+                    this.CategoryDataTableRowChanging(this, new CategoryDataTableRowChangeEvent(((CategoryDataTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -491,8 +449,8 @@ namespace WindowsFormsApp1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.moneyDataTableRowDeleted != null)) {
-                    this.moneyDataTableRowDeleted(this, new moneyDataTableRowChangeEvent(((moneyDataTableRow)(e.Row)), e.Action));
+                if ((this.CategoryDataTableRowDeleted != null)) {
+                    this.CategoryDataTableRowDeleted(this, new CategoryDataTableRowChangeEvent(((CategoryDataTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -500,14 +458,14 @@ namespace WindowsFormsApp1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.moneyDataTableRowDeleting != null)) {
-                    this.moneyDataTableRowDeleting(this, new moneyDataTableRowChangeEvent(((moneyDataTableRow)(e.Row)), e.Action));
+                if ((this.CategoryDataTableRowDeleting != null)) {
+                    this.CategoryDataTableRowDeleting(this, new CategoryDataTableRowChangeEvent(((CategoryDataTableRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemovemoneyDataTableRow(moneyDataTableRow row) {
+            public void RemoveCategoryDataTableRow(CategoryDataTableRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -516,7 +474,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                MoneyDataSet ds = new MoneyDataSet();
+                CategoryDataSet ds = new CategoryDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -534,7 +492,7 @@ namespace WindowsFormsApp1 {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "moneyDataTableDataTable";
+                attribute2.FixedValue = "CategoryDataTableDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -578,31 +536,15 @@ namespace WindowsFormsApp1 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class moneyDataTableRow : global::System.Data.DataRow {
+        public partial class CategoryDataTableRow : global::System.Data.DataRow {
             
-            private moneyDataTableDataTable tablemoneyDataTable;
+            private CategoryDataTableDataTable tableCategoryDataTable;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal moneyDataTableRow(global::System.Data.DataRowBuilder rb) : 
+            internal CategoryDataTableRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablemoneyDataTable = ((moneyDataTableDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public System.DateTime 日付 {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tablemoneyDataTable.日付Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("テーブル \'moneyDataTable\' にある列 \'日付\' の値は DBNull です。", e);
-                    }
-                }
-                set {
-                    this[this.tablemoneyDataTable.日付Column] = value;
-                }
+                this.tableCategoryDataTable = ((CategoryDataTableDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -610,123 +552,55 @@ namespace WindowsFormsApp1 {
             public string 分類 {
                 get {
                     try {
-                        return ((string)(this[this.tablemoneyDataTable.分類Column]));
+                        return ((string)(this[this.tableCategoryDataTable.分類Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("テーブル \'moneyDataTable\' にある列 \'分類\' の値は DBNull です。", e);
+                        throw new global::System.Data.StrongTypingException("テーブル \'CategoryDataTable\' にある列 \'分類\' の値は DBNull です。", e);
                     }
                 }
                 set {
-                    this[this.tablemoneyDataTable.分類Column] = value;
+                    this[this.tableCategoryDataTable.分類Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string 品名 {
+            public string 入出金分類 {
                 get {
                     try {
-                        return ((string)(this[this.tablemoneyDataTable.品名Column]));
+                        return ((string)(this[this.tableCategoryDataTable.入出金分類Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("テーブル \'moneyDataTable\' にある列 \'品名\' の値は DBNull です。", e);
+                        throw new global::System.Data.StrongTypingException("テーブル \'CategoryDataTable\' にある列 \'入出金分類\' の値は DBNull です。", e);
                     }
                 }
                 set {
-                    this[this.tablemoneyDataTable.品名Column] = value;
+                    this[this.tableCategoryDataTable.入出金分類Column] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public int 金額 {
-                get {
-                    try {
-                        return ((int)(this[this.tablemoneyDataTable.金額Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("テーブル \'moneyDataTable\' にある列 \'金額\' の値は DBNull です。", e);
-                    }
-                }
-                set {
-                    this[this.tablemoneyDataTable.金額Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string 備考 {
-                get {
-                    try {
-                        return ((string)(this[this.tablemoneyDataTable.備考Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("テーブル \'moneyDataTable\' にある列 \'備考\' の値は DBNull です。", e);
-                    }
-                }
-                set {
-                    this[this.tablemoneyDataTable.備考Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool Is日付Null() {
-                return this.IsNull(this.tablemoneyDataTable.日付Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Set日付Null() {
-                this[this.tablemoneyDataTable.日付Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool Is分類Null() {
-                return this.IsNull(this.tablemoneyDataTable.分類Column);
+                return this.IsNull(this.tableCategoryDataTable.分類Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void Set分類Null() {
-                this[this.tablemoneyDataTable.分類Column] = global::System.Convert.DBNull;
+                this[this.tableCategoryDataTable.分類Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool Is品名Null() {
-                return this.IsNull(this.tablemoneyDataTable.品名Column);
+            public bool Is入出金分類Null() {
+                return this.IsNull(this.tableCategoryDataTable.入出金分類Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Set品名Null() {
-                this[this.tablemoneyDataTable.品名Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool Is金額Null() {
-                return this.IsNull(this.tablemoneyDataTable.金額Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Set金額Null() {
-                this[this.tablemoneyDataTable.金額Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool Is備考Null() {
-                return this.IsNull(this.tablemoneyDataTable.備考Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Set備考Null() {
-                this[this.tablemoneyDataTable.備考Column] = global::System.Convert.DBNull;
+            public void Set入出金分類Null() {
+                this[this.tableCategoryDataTable.入出金分類Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -734,22 +608,22 @@ namespace WindowsFormsApp1 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class moneyDataTableRowChangeEvent : global::System.EventArgs {
+        public class CategoryDataTableRowChangeEvent : global::System.EventArgs {
             
-            private moneyDataTableRow eventRow;
+            private CategoryDataTableRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public moneyDataTableRowChangeEvent(moneyDataTableRow row, global::System.Data.DataRowAction action) {
+            public CategoryDataTableRowChangeEvent(CategoryDataTableRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public moneyDataTableRow Row {
+            public CategoryDataTableRow Row {
                 get {
                     return this.eventRow;
                 }
